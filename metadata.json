@@ -1,0 +1,6 @@
+{
+  "name": "Rajmahal Culinaire",
+  "description": "An imperial Rajasthani fine dining experience marrying 12th-century ancestral recipes with modern molecular gastronomy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
