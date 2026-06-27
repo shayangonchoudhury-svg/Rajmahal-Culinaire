@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+/* Custom background patterns and luxury effects */
+.jali-pattern {
+  background-color: #080808;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 15-15 15-15-15L30 0zm0 60l15-15-15-15-15 15 15 15zM0 30l15 15 15-15-15-15L0 30zm60 0l-15 15-15-15 15-15 15 15z' fill='%23C5A059' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+.velvet-texture {
+  background: linear-gradient(135deg, rgba(8, 8, 8, 0.98) 0%, rgba(18, 18, 18, 0.95) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.velvet-texture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.glass-card {
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+.gold-rim {
+  box-shadow: inset 0 0 0 1px rgba(197, 160, 89, 0.25);
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(197, 160, 89, 0.35);
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0.65) 65%, rgba(8, 8, 8, 1) 100%);
+}
+
+body {
+  background-color: #080808;
+  color: #F0F0F0;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: #C5A059;
+  color: #000000;
+}
+
+
